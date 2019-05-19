@@ -1,0 +1,40 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author sreeramktm
+ */
+import java.util.*;
+public class duplicate {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a String");
+        String a=s.next();
+        char y=' ';
+        for(int i=0;i<a.length();i++)
+        {
+            for(int j=i+1;j<a.length();j++)
+            {
+                if(a.charAt(i)==a.charAt(j))
+                {
+                    y=a.charAt(i);
+                }
+            }
+        }
+        if(Character.isLetter(y))
+        {
+        System.out.println(y);
+        }
+        else
+        {
+            System.out.println("No repeating characters found");
+        }
+            
+    }
+    
+}
