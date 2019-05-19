@@ -1,0 +1,68 @@
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
+
+/**
+ *
+ * @author sreeramktm
+ */
+import java.util.*;
+public class Palin {
+    public static void main(String args[])
+    {
+        Scanner s=new Scanner(System.in);
+        System.out.println("Enter a String");
+        String a=s.next();
+        System.out.println("Enter the second string");
+        String b=s.next();
+         int count=0;
+        if(a.length()==b.length())
+        {
+            char c[]=a.toCharArray();
+            char d[]=b.toCharArray();
+        //System.out.println("Enter another String");
+        //String b=s.nextLine();
+        for(int i=0;i<c.length;i++)
+        {
+            for(int j=0;j<d.length;j++)
+            {
+                if(c[i]==d[j])
+                {
+                    count++;
+                }
+        //        else
+        //        {
+        //            System.out.println("No duplicate characers found");
+        //        }
+            }
+        }
+        }
+        else
+        {
+            System.out.println("They are not anagrams");
+        }
+        if(count==a.length())
+        {
+            System.out.println("They are anagrams");
+        }
+    /*    if(Character.isLetter(y))
+        {
+        System.out.println(y);
+        }
+        else
+        {
+            System.out.println("No repeating characters found");
+        }
+        //{
+        //    System.out.println("Palindrome");
+        //}
+        //else
+        //{
+        //    System.out.println("Not a Palindrome");
+        //}
+*/
+    }
+    
+    }
